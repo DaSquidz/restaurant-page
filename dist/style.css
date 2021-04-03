@@ -1,3 +1,11 @@
+/* header stuff */
 h1 {
+    text-align: center;
+}
+/* content stuff */
+main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
