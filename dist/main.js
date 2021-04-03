@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/header */ \"./src/modules/header.js\");\n/* harmony import */ var _modules_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/home */ \"./src/modules/home.js\");\n\n\n\n\n\nload();\n\nfunction load() {\n    const content = document.getElementById(\"content\");\n    content.appendChild((0,_modules_header__WEBPACK_IMPORTED_MODULE_0__.default)());\n    content.appendChild((0,_modules_home__WEBPACK_IMPORTED_MODULE_1__.default)());\n}\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_skeleton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/skeleton */ \"./src/modules/skeleton.js\");\n/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/header */ \"./src/modules/header.js\");\n/* harmony import */ var _modules_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/home */ \"./src/modules/home.js\");\n\n\n\n\n\nload();\n\nfunction load() {\n    const content = document.getElementById(\"content\");\n    content.appendChild((0,_modules_skeleton__WEBPACK_IMPORTED_MODULE_0__.default)());\n    (0,_modules_header__WEBPACK_IMPORTED_MODULE_1__.default)();\n    (0,_modules_home__WEBPACK_IMPORTED_MODULE_2__.default)();\n}\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createHeader() {\n    const header = document.createElement(\"header\");\n    const headerText = document.createElement(\"h1\");\n\n    headerText.innerText = \"Ristorante Ufo Robot\";\n\n    header.appendChild(headerText);\n\n    return header;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHeader);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createHeader() {\n    const header = document.getElementById(\"header\");\n    const headerText = document.createElement(\"h1\");\n\n    headerText.innerText = \"Ristorante Ufo Robot\";\n\n    header.appendChild(headerText);\n\n    return header;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHeader);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/header.js?");
 
 /***/ }),
 
@@ -36,7 +36,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createHome() {\n    const main = document.createElement(\"main\");\n\n    const mainBox = document.createElement(\"div\");\n    mainBox.classList.add(\"main-box\")\n\n    const goldrakePic = document.createElement(\"img\");\n    goldrakePic.src = \"images/goldrake.png\";\n    goldrakePic.alt = \"goldrake\";\n\n    const textParagraph = document.createElement(\"p\");\n    textParagraph.innerText = \"Gusta le migliori insalate di matematica\";\n\n    mainBox.appendChild(goldrakePic);\n    mainBox.appendChild(textParagraph);\n\n    main.appendChild(mainBox);\n\n    return main\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHome);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createHome() {\n    const main = document.getElementById(\"main\");\n\n    const mainBox = document.createElement(\"div\");\n    mainBox.classList.add(\"main-box\")\n\n    const goldrakePic = document.createElement(\"img\");\n    goldrakePic.src = \"images/goldrake.png\";\n    goldrakePic.alt = \"goldrake\";\n\n    const textParagraph = document.createElement(\"p\");\n    textParagraph.innerText = \"Gusta le migliori insalate di matematica\";\n\n    mainBox.appendChild(goldrakePic);\n    mainBox.appendChild(textParagraph);\n\n    main.appendChild(mainBox);\n\n    return main\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHome);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/home.js?");
+
+/***/ }),
+
+/***/ "./src/modules/skeleton.js":
+/*!*********************************!*\
+  !*** ./src/modules/skeleton.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createSkeleton() {\n    const container = document.createElement(\"div\");\n    container.id = \"container\";\n\n    const header = document.createElement(\"header\");\n    header.id = \"header\";\n\n    const main = document.createElement(\"main\");\n    main.id = \"main\";\n\n    container.appendChild(header);\n    container.appendChild(main);\n\n    return container;\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createSkeleton);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/skeleton.js?");
 
 /***/ })
 

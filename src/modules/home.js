@@ -1,5 +1,5 @@
 function createHome() {
-    const main = document.createElement("main");
+    const main = document.getElementById("main");
 
     const mainBox = document.createElement("div");
     mainBox.classList.add("main-box")

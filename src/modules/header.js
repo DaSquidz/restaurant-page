@@ -1,5 +1,5 @@
 function createHeader() {
-    const header = document.createElement("header");
+    const header = document.getElementById("header");
     const headerText = document.createElement("h1");
 
     headerText.innerText = "Ristorante Ufo Robot";
