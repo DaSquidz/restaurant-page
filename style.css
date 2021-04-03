@@ -95,5 +95,13 @@ main {
     background-color: #503197;
 }
 main img {
+    margin: 10px;
     border-radius: 50%;
+}
+.main-box {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.main-box h2 {
+    margin: 10px;
 }
