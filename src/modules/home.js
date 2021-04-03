@@ -1,5 +1,6 @@
 function createHome() {
     const main = document.getElementById("main");
+    main.textContent = "";
 
     const mainBox = document.createElement("div");
     mainBox.classList.add("main-box")
@@ -16,7 +17,7 @@ function createHome() {
 
     main.appendChild(mainBox);
 
-    return main
+    return main;
 }
 
 export default createHome;

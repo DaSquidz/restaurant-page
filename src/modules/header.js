@@ -18,9 +18,9 @@ function createHeader() {
     const homeNavButton = document.createElement("button");
     homeNavButton.innerText = "Home";
     const menuNavButton = document.createElement("button");
-    menuNavButton.innerText = "Menu";
+    menuNavButton.innerText = "Menù";
     const contactNavButton = document.createElement("button");
-    contactNavButton.innerText = "Contact";
+    contactNavButton.innerText = "Contatti";
 
 
     homeNav.appendChild(homeNavButton);

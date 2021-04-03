@@ -1,6 +1,7 @@
 import createSkeleton from './modules/skeleton';
 import createHeader from './modules/header';
 import createHome from './modules/home';
+import createContact from './modules/contact';
 
 
 load();
@@ -10,4 +11,5 @@ function load() {
     content.appendChild(createSkeleton());
     createHeader();
     createHome();
+    //createContact();
 }
