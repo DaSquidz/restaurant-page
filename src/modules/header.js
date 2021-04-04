@@ -16,10 +16,13 @@ function createHeader() {
     const contactNav = document.createElement("li");
 
     const homeNavButton = document.createElement("button");
+    homeNavButton.classList.add("nav-button");
     homeNavButton.innerText = "Home";
     const menuNavButton = document.createElement("button");
+    menuNavButton.classList.add("nav-button");
     menuNavButton.innerText = "Menù";
     const contactNavButton = document.createElement("button");
+    contactNavButton.classList.add("nav-button");
     contactNavButton.innerText = "Contatti";
 
 
