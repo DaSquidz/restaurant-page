@@ -71,7 +71,12 @@ header {
     position: sticky;
     top: 0;
     background-color: #18215d;
-    height: 20vh;
+    height: 150px;
+}
+@media screen and (min-width: 600px) {
+    header {
+        height: 180px;
+    }
 }
 h1 {
     font-size: 2em;
@@ -133,4 +138,12 @@ main img {
 .food-cont {
     display: grid;
     row-gap: 20px;
+    width: 90vw;
+}
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
