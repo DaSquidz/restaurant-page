@@ -15,10 +15,18 @@ function createContact() {
     const addressParagraph = document.createElement("p");
     addressParagraph.innerText = "Stella di Vega, Via Zuril 47Y";
 
+    const picCont = document.createElement("div");
+    picCont.classList.add("pic-cont");
+    const actarusPic = document.createElement("img");
+    actarusPic.src = "images/actarus.jpg";
+    actarusPic.alt = "goldrake";
+    picCont.appendChild(actarusPic);
+
     mainBox.appendChild(phoneHeader);
     mainBox.appendChild(phoneParagraph);
     mainBox.appendChild(addressHeader);
     mainBox.appendChild(addressParagraph);
+    mainBox.appendChild(actarusPic);
 
     main.appendChild(mainBox);
 
