@@ -82,6 +82,9 @@ h1 {
     font-size: 2em;
     padding: 1.1em;
 }
+.navbar-cont {
+    width: 100%;
+}
 .navbar{
     list-style-type: none;
     margin: 0;
@@ -108,13 +111,16 @@ h1 {
 }
 /* content stuff */
 main {
-    min-height: 80vh;
+    min-height: 100vh;
     height: auto;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     text-align: center;
+    background-size:cover;
+    background-repeat: repeat;
     background-color: #503197;
+    background-image: url('images/bg.jpg');
 }
 .pic-cont {
     margin: 5vh auto;

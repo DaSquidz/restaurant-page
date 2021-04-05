@@ -8,7 +8,7 @@ function createHome() {
     const picCont = document.createElement("div");
     picCont.classList.add("pic-cont");
     const goldrakePic = document.createElement("img");
-    goldrakePic.src = "images/goldrake.png";
+    goldrakePic.src = "images/goldrake.jpg";
     goldrakePic.alt = "goldrake";
     picCont.appendChild(goldrakePic);
 
