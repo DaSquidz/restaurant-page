@@ -1,26 +1,26 @@
 function createHome() {
-    const main = document.getElementById("main");
-    main.textContent = "";
+  const main = document.getElementById('main');
+  main.textContent = '';
 
-    const mainBox = document.createElement("div");
-    mainBox.classList.add("main-box")
+  const mainBox = document.createElement('div');
+  mainBox.classList.add('main-box');
 
-    const picCont = document.createElement("div");
-    picCont.classList.add("pic-cont");
-    const goldrakePic = document.createElement("img");
-    goldrakePic.src = "images/goldrake.jpg";
-    goldrakePic.alt = "goldrake";
-    picCont.appendChild(goldrakePic);
+  const picCont = document.createElement('div');
+  picCont.classList.add('pic-cont');
+  const goldrakePic = document.createElement('img');
+  goldrakePic.src = 'images/goldrake.jpg';
+  goldrakePic.alt = 'goldrake';
+  picCont.appendChild(goldrakePic);
 
-    const textParagraph = document.createElement("p");
-    textParagraph.innerText = "Gusta le migliori insalate di matematica";
+  const textParagraph = document.createElement('p');
+  textParagraph.innerText = 'Gusta le migliori insalate di matematica';
 
-    mainBox.appendChild(picCont);
-    mainBox.appendChild(textParagraph);
+  mainBox.appendChild(picCont);
+  mainBox.appendChild(textParagraph);
 
-    main.appendChild(mainBox);
+  main.appendChild(mainBox);
 
-    return main;
+  return main;
 }
 
 export default createHome;
