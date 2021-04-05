@@ -5,8 +5,8 @@ import createMenu from './modules/menu';
 import createContact from './modules/contact';
 
 
-load();
 const navButtons = document.getElementsByClassName("nav-button")
+load();
 
 navButtons[0].addEventListener("click", (e) => {
     if(e.target.classList.contains("active")) return;
@@ -29,6 +29,7 @@ function load() {
     content.appendChild(createSkeleton());
     createHeader();
     createHome();
+    navButtons[0].classList.add("active");
 }
 
 function setActive(btn) {

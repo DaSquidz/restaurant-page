@@ -10,16 +10,11 @@ function createMenu() {
     
     const saladTitle = document.createElement("h2");
     saladTitle.innerText = "Insalate"
-    const dressingTitle = document.createElement("h2");
-    dressingTitle.innerText = "Contorno del contorno"
 
     foodCont.appendChild(saladTitle);
     foodCont.appendChild(createItem("Lattuga Algebrica", "Gustosa lattuga con retrogusto di equazioni polinomiali"))
     foodCont.appendChild(createItem("Misticanza Geometrica", "Succulenta misticanza tagliata a piani cartesiani"))
     foodCont.appendChild(createItem("Rucola di statistica", "Rucola saporita con teorema di Bayes"))
-    foodCont.appendChild(dressingTitle);
-    foodCont.appendChild(createItem("Libro di cibernetica", "Il famoso libro La cibernetica di Norbert Wiener"))
-
 
     mainBox.appendChild(foodCont);
     main.appendChild(mainBox);
@@ -37,13 +32,13 @@ function createItem(name, desc) {
     const foodDesc = document.createElement("p");
     foodDesc.innerText = desc;
   
-    // const foodPic = document.createElement("img");
-    // foodPic.src = `images/${name.toLowerCase()}.png`;
-    // foodPic.alt = `${name}`;
-  
-    // menuItem.appendChild(foodPic);
+    const foodPic = document.createElement("img");
+    foodPic.src = `images/${name.toLowerCase().replace(/\s+/g, '')}.jpg`;
+    foodPic.alt = `${name}`;
+    
     menuItem.appendChild(foodName);
     menuItem.appendChild(foodDesc);
+    menuItem.appendChild(foodPic);
   
     return menuItem;
   }
